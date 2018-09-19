@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='styles/custom.css' rel='stylesheet' type='text/css'>
+	<link href='styles/custom-media.css' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<link href='styles/reset.css' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="headerContainer">
+	<div class="headerContainerTop">
+		<div class="container">
+			<nav class="navbar navbar-expand justify-content-center">
+			  <ul class="navbar-nav align-items-center text-center">
+			    <li class="nav-item">
+			      <a class="nav-link" href="#"><span>Navigation</span> Link One</a>
+			    </li>
+			    <li class="nav-item">
+			      <a class="nav-link" href="#"><span>Navigation</span> Link Two</a>
+			    </li>
+			    <li class="nav-item ign_r">
+			      <a class="nav-link" href="#"><span>Navigation</span> Link Three</a>
+			    </li>
+			  </ul>
+			</nav>
+		</div>
+	</div>
+	<div class="headerContainerBot">
+		<div class="container">
+			<h1>Do the right thing</h1>
+		</div>
+	</div>
+</div>
+<div class="mainContentContainer">
+	<div class="container padding_0">
+		<h4 class="padding_15">Credit Opportunities With Good Approval Oddsst</h4>
+		<div class="mct_content">
+			<div class="mct_content_top clearfix">
+				<h5>Barclaycard CashForword World MasterCard</h5>
+			  	<div class="star-rating">
+			        <span class="fa fa-star-o" data-rating="1"></span>
+			        <span class="fa fa-star-o" data-rating="2"></span>
+			        <span class="fa fa-star-o" data-rating="3"></span>
+			        <span class="fa fa-star-o" data-rating="4"></span>
+			        <span class="fa fa-star-o" data-rating="5"></span>
+			        <input type="hidden" name="whatever1" class="rating-value" value="3.252">
+			        <span class="review"> 3.252 Reviews</span>
+			    </div>
+		    </div>	            
+			<div class="mct_content_mid clearfix">
+				<div class="mct_content_mid_left">
+					<div class="right">
+						<p>Approval<br/>Oddst</p>
+						<button>Very Good</button>
+					</div>
+				</div>
+				<div class="mct_content_mid_right">
+					<ul>
+						<li class="align-top">
+							<p>Get a $100 cash rewards bonus after you spend $500 in purchases in the first 90 days after account oppening</p>
+						</li>
+						<li>
+							<p>Earn unlimited 1.5% cash rewards on every purcahse.</p>
+						</li>
+						<li>
+							<p>Earn unlimited 1.5% cash rewards on every...<a href="#">show more</a></p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<button>Apply Now</button>
+			<hr class="chr">
+			<div class="mct_content_bot">
+				<a href="#">See Details Rates & Fees</a>
+			</div>
+		</div>
+	</div>
+</div> 
+</body>
+<script type="text/javascript">
+	var $star_rating = $('.mainContentContainer .star-rating .fa');
+	var SetRatingStar = function() {
+	  return $star_rating.each(function() {
+	    if (parseInt($star_rating.siblings('input.rating-value').val()) >= parseInt($(this).data('rating'))) {
+	      return $(this).removeClass('fa-star-o').addClass('fa-star');
+	    } else {
+	      return $(this).removeClass('fa-star').addClass('fa-star-o');
+	    }
+	  });
+	};
+	$star_rating.on('click', function() {
+	  $star_rating.siblings('input.rating-value').val($(this).data('rating'));
+	  return SetRatingStar();
+	});
+	SetRatingStar();
+	$(document).ready(function() {
+	});
+</script>
+</html>
